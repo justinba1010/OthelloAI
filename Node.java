@@ -40,6 +40,7 @@ public class Node {
       newNode.generate(depth-1);
       children.add(newNode);
     }
+    Collections.shuffle(children);
   }//generate
 
   public int minimax(int depth) {
@@ -56,8 +57,8 @@ public class Node {
     }
     return maximin;
   }
-
   public Node makeBestMove() {
     return bestNode;
   }
+
 }//Node

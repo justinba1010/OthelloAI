@@ -3,7 +3,7 @@ import java.util.*;
 
 public class Othello2AI {
   public static void main(String[] args) {
-    int diff = 3;
+    int diff = 5;
     OthelloBoard ot = new OthelloBoard();
     Node AI = new Node(ot);
     AI.generate(3);
